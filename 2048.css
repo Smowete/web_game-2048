@@ -1,0 +1,107 @@
+body {
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    font-size: 14pt;
+	background-color: #FEEEFF;
+}
+
+#block00 {
+	text-align: center;
+}
+
+#block01 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#block02 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#block03 {
+	text-align: center;
+}
+
+#block04 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#game-name {
+	width: 50%;
+	text-align: center;
+}
+
+#score-div {
+	width: 30%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#score-field {
+	font-size: 30pt;
+}
+
+h1 {
+	font-size: 70pt;
+}
+
+.grid-container {
+	width: 450px;
+	height: 450px;
+	background-color: #CABCCA;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.grid-row {
+	width: 440px;
+	height: 100px;
+	background-color: #CABCCA;
+	border-radius: 10px;
+	display: flex;
+	margin: auto;
+}
+
+.grid-cell {
+	width: 100px;
+	height: 100px;
+	background-color: #E6C2FF;
+	border-radius: 5px;
+	margin: auto;
+	font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
+	font-weight: bold;
+	color: #575757;
+	font-size: 40px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.records-div {
+	width: 60%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#records {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.loadingImg {
+	width: 100px;
+}
+
+.hidden {
+	display: none;
+}

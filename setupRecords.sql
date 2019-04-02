@@ -1,0 +1,7 @@
+
+
+CREATE TABLE IF NOT EXISTS records (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50),
+    score INTEGER
+);

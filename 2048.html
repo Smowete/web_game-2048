@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>2048</title>
+
+		<link href="2048.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="./js/ajax-promise.js"></script>
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/2048.js"></script>
+		<script type="text/javascript" src="./js/records.js"></script>
+	</head>
+
+	<body>
+			
+		<div id="block00">
+			<h3 id="user-signed-in">You are logged in as : 
+					<span id="username"></span>
+				&nbsp;&nbsp;
+				<a href="../../login_system/login.html">not you?</a>
+			</h3>
+			<h3 id="user-not-signed-in" style="border: 2px red solid;">You are not logged in yet, 
+				<a href="../../login_system/login.html">sign in</a> 
+				to place your name on records! 
+			</h3>
+		</div>    
+		
+		<div id="block01">
+			<div id="game-name">
+				<h1>2048</h1>
+			</div>
+			<div id="score-div">
+				<fieldset id="score-field">
+					<legend>Score:</legend>
+					<div id="score">0</div>
+				</fieldset>
+				<br />
+				<button id="newGame">New Game</button>
+			</div>
+		</div>
+		
+		<div id="block02">
+			<div class="grid-container">
+				<div class="grid-row">
+					<div class="grid-cell" id="0_0"></div>
+					<div class="grid-cell" id="0_1"></div>
+					<div class="grid-cell" id="0_2"></div>
+					<div class="grid-cell" id="0_3"></div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-cell" id="1_0"></div>
+					<div class="grid-cell" id="1_1"></div>
+					<div class="grid-cell" id="1_2"></div>
+					<div class="grid-cell" id="1_3"></div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-cell" id="2_0"></div>
+					<div class="grid-cell" id="2_1"></div>
+					<div class="grid-cell" id="2_2"></div>
+					<div class="grid-cell" id="2_3"></div>
+				</div>
+				<div class="grid-row">
+					<div class="grid-cell" id="3_0"></div>
+					<div class="grid-cell" id="3_1"></div>
+					<div class="grid-cell" id="3_2"></div>
+					<div class="grid-cell" id="3_3"></div>
+				</div>
+			</div>
+		</div>
+		
+		<br />
+		
+		<div id="block03">
+			<button id="recordsButton">Show Records</button>
+			<button id="recordsButton2" class="hidden">Hide Records</button>
+			<br /><br />
+			<div id="recordsWrap" class="hidden">
+				<div id="records" style="display: flex; flex-direction: row;
+		justify-content: center;">
+					<div class="records-div">
+						<fieldset id="highScores">
+							<legend>High Scores:</legend>
+							<img id="loading" class="loadingImg" src="img/loading.gif" alt="loading" />
+							<ol id="highScoresList">
+
+							</ol>
+						</fieldset>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<br />
+		
+		
+		<div id="block04">
+			<p class="info">
+				&copy; Hongxiao Lyu --- 2019 --- All rights reserved.
+			</p>
+		</div>
+			
+		
+	</body>
+</html>
